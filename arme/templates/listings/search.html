@@ -27,7 +27,7 @@
                 <select name="state" class="form-control">
                   <option selected="true" disabled="disabled">State (All)</option>
                   {% for key,value in state_choices.items %}
-                      <option value="{{ key }}"
+                      <option value="{{ key }}" 
                       {% if key == values.state %}
                         selected
                       {% endif %}
@@ -145,5 +145,4 @@
       </div>
     </div>
   </section>
-
   {% endblock %}
